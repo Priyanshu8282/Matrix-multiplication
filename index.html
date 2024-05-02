@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container"> 
+        <div id="matrixInput">
+        <h2>Matrix Multipication</h2>
+        <div class="matrixSize"> 
+            <h4>Select the matrix size:<h4>
+            <p>A: <input type="number" id="matrix1Rows" min="1" placeholder="Enter number of rows">  X  <input type="number" id="matrix1Cols" min="1" placeholder="Enter number of columns"></p>
+            <p>B:<input type="number" id="matrix2Rows" min="1" placeholder="Enter number of rows"> X   <input type="number" id="matrix2Cols" min="1" placeholder="Enter number of columns"></p>
+        </div>
+        <button onclick="getMatrixDimensions()">Next</button>
+    </div>
+    <div id="matrixValues" style="display: none;">
+        <h2>Enter Matrix 1 Values:</h2>
+        <div id="matrix1"></div>
+        <h2>Enter Matrix 2 Values:</h2>
+        <div id="matrix2"></div>
+        <br>
+        <button onclick="calculate()">Calculate</button>
+    </div>
+</div>
+
+    <div id="result" style="display: none;">
+        <h2>Result:-</h2>
+        <div id="resultMatrix"></div>
+    </div>
+
+      
+    <script src="script.js"></script>
+</body>
+</html>
